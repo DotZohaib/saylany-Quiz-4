@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Contact Form of School of Wisdom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-................" crossorigin="anonymous" />
+    <link rel="icon" href="img/WhatsApp_Image_2024-01-27_at_10.41.39_123ba8c3-removebg-preview.png">
+
+    <style>
+        #nav {
+            height: 130px;
+            background-color: white;
+            margin-top: -22px;
+        }
+
+        #nav ul img {
+            height: 120px;
+            width: 20%;
+            list-style: none;
+            display: flex;
+            margin: 10px 50px;
+        }
+
+        #nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #nav ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            color: black;
+        }
+
+        #left {
+            margin-left: 300px;
+        }
+
+        .effect03 {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .effect03 li {
+            display: inline-block;
+            margin: 0 -10px;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .icon-box i {
+            font-size: 27px;
+            color: var(--clr);
+        }
+
+        .effect03 li:hover .icon-box {
+            background-color: #ddd;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+        
+
+#submit {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    margin: 20px;
+    /* font-family: 'Poppins', sans-serif; */
+  }
+  
+  #submit h2 {
+    font-size: 33px;
+    color: #333;
+  }
+  
+  #submit .bold {
+    font-weight: bold;
+  }
+  
+  #submit p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  /* Optional: Add some margin or padding to space out the elements */
+  #submit .wpb_wrapper {
+    margin-bottom: 15px;
+  }
+
+  .wpb_wrapper {
+    text-align: center;
+  }
+  
+  .wpb_wrapper p {
+    margin: 0; /* Remove default paragraph margin */
+  }
+  
+  .wpb_wrapper a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color, you can change it */
+    color: #fff; /* White text color, you can change it */
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow, you can adjust values */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition on hover */
+  }
+  
+  .wpb_wrapper a:hover {
+    background-color: #45a049; /* Darker green on hover, you can change it */
+    text-decoration: underline; /* Underline on hover, you can change it */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover, you can adjust values */
+  }
+  
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+        <ul>
+            <img src="img/WhatsApp_Image_2024-01-27_at_10.41.39_123ba8c3-removebg-preview.png" alt="School of Wisdom Logo">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Contact</a></li>
+            <div id="left">
+                <ul class="effect03">
+                    <li>
+                        <a href="#">
+                            <div class="icon-box" style="--clr: rgb(0, 255, 21);">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon-box" style="--clr: red;">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon-box" style="--clr: rgb(4, 0, 255);">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    <div id="submit">
+        <div class="wpb_wrapper">
+            <h2>Become The <span class="bold">Future Of Sow</span></h2>
+
+        </div>
+
+
+        <div class="wpb_wrapper">
+            <p>Our goal is to foster a love of learning that will be the basis for a lifetime of growth, exploration
+                and success.<br />
+                We view parents as vital partners in this journey ahead. With commitment and enthusiasm we continue
+                to stride<br />
+                confidently in the field of education.</p>
+
+        </div>
+            <div class="wpb_wrapper">
+                <p><a href="" rel="noopener">Register My Child Now</a></p>
+            </div>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            if (name.trim() === '' || email.trim() === '' || subject.trim() === '' || message.trim() === '') {
+                alert('All fields are required');
+                return;
+            }
+
+            // Additional validation can be added here
+
+            // If all validations pass, you can submit the form or perform other actions
+            alert('Form submitted successfully!');
+        }
+    </script>
+
+</body>
+</html>
